@@ -3,12 +3,18 @@
 		<title>Vain sanoja</title>
 		<link href="https://fonts.googleapis.com/css?family=Kalam:700&display=swap" rel="stylesheet">
 		<style type="text/css">
+			body {
+				display: grid;
+				grid-template-rows: 80% 20%;
+			}
 			#sana {
-				font-size: 30vw;
+				font-size: 20vw;
 				text-align: center;
 				font-family: 'Kalam', cursive;
 				line-height: 1.4;
-				max-height: 80%;
+				display: flex;
+				justify-content: center;
+  				align-items: center;
 			}
 			button {
 				font-size: 20px;
@@ -27,9 +33,14 @@
 		<script type="text/javascript">
 			// https://docs.google.com/spreadsheets/d/1HWejarlVfJjmQMiS_2Qa-vOahItW28jv5jc0ut187XE/edit?usp=sharing
 			const sanat = [
-'uuno',
-'knizia',
+'biljardi',
 'ikävä',
+'knizia',
+'lautapeli',
+'lontoo',
+'postikortti',
+'tarot',
+'uuno',
 ]
 			const sana = sanat[sanat.length * Math.random() | 0]
 			const div = document.querySelector("#sana")
