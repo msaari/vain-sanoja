@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>Vain sanoja</title>
+		<link href="https://fonts.googleapis.com/css?family=Kalam:700&display=swap" rel="stylesheet">
+		<style type="text/css">
+			#sana {
+				font-size: 30vw;
+				text-align: center;
+				font-family: 'Kalam', cursive;
+				line-height: 1.4;
+				max-height: 80%;
+			}
+			button {
+				font-size: 20px;
+				width: 200px;
+				margin: 0 auto;
+				display: block;
+				background-color: yellowgreen;
+				padding: 15px;
+				border-radius: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="sana"></div>
+		<button onClick="window.location.reload();">Uusi sana</button>
+		<script type="text/javascript">
+			// https://docs.google.com/spreadsheets/d/1HWejarlVfJjmQMiS_2Qa-vOahItW28jv5jc0ut187XE/edit?usp=sharing
+			const sanat = [
+'uuno',
+'knizia',
+'ikävä',
+]
+			const sana = sanat[sanat.length * Math.random() | 0]
+			const div = document.querySelector("#sana")
+			div.innerHTML = sana
+		</script>
+	</body>
+</html>
