@@ -32,7 +32,7 @@
 	</head>
 	<body>
 		<div id="sana"></div>
-		<button onClick="window.location.reload();">Uusi sana</button>
+		<button onClick="uusiSana();">Uusi sana</button>
 		<script type="text/javascript">
 			// https://docs.google.com/spreadsheets/d/1HWejarlVfJjmQMiS_2Qa-vOahItW28jv5jc0ut187XE/edit?usp=sharing
 			const sanat = [
@@ -63164,9 +63164,12 @@
 'Ähtäri',
 'Äänekoski',
 ]
-			const sana = sanat[sanat.length * Math.random() | 0]
-			const div = document.querySelector("#sana")
-			div.innerHTML = sana
+			function uusiSana() {
+				const sana = sanat[sanat.length * Math.random() | 0]
+				const div = document.querySelector("#sana")
+				div.innerHTML = sana
+			}
+			uusiSana()
 		</script>
 	</body>
 </html>
