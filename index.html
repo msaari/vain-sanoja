@@ -11,10 +11,12 @@
 				font-size: 20vw;
 				text-align: center;
 				font-family: 'Kalam', cursive;
-				line-height: 1.4;
+				line-height: 1;
 				display: flex;
 				justify-content: center;
   				align-items: center;
+  				max-width: 100%;
+  				hyphens: auto;
 			}
 			button {
 				font-size: 20px;
@@ -33,14 +35,45 @@
 		<script type="text/javascript">
 			// https://docs.google.com/spreadsheets/d/1HWejarlVfJjmQMiS_2Qa-vOahItW28jv5jc0ut187XE/edit?usp=sharing
 			const sanat = [
+'18xx',
 'biljardi',
+'boardgamegeek',
+'carcassonne',
+'catan',
+'dominion',
+'graniitti',
+'huulipuna',
 'ikävä',
+'jää',
 'knizia',
+'kuukautiset',
 'lautapeli',
 'lontoo',
+'lumi',
 'postikortti',
 'tarot',
+'tarra',
+'tikkaat',
+'twitter',
 'uuno',
+'vesi',
+'korttipakka',
+'metsä',
+'sinappi',
+'manteli',
+'tietokone',
+'osake',
+'osinko',
+'mitokondrio',
+'dna',
+'geeni',
+'meemi',
+'patteri',
+'muuntaja',
+'käämi',
+'jäätelö',
+'mascara',
+'muunsukupuolinen',
 ]
 			const sana = sanat[sanat.length * Math.random() | 0]
 			const div = document.querySelector("#sana")
